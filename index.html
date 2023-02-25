@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bachiito's Store</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Estilos Personales -->
+    <style>
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body class="bg-danger text-light my-4 mx-auto">
+    <div class="container">
+      <h1 class="text-center font-monospace">Bachiito's Store</h1>
+
+      <div class="row row-gap-3">
+        <!-- Carrusel 1 - Video Juegos -->
+        <div
+          id="carrusel-juegos"
+          class="carousel slide col-sm-6 col-md-4 col-lg"
+        >
+          <div class="carousel-inner">
+            <h2 class="text-center">Lo más destacado en Videojuegos</h2>
+
+            <!-- Artículo 1 -->
+            <div class="carousel-item active">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/games/the-legend-of-zelda-tears-of-the-kingdom--Nintendo-Switch.jpg"
+                  class="card-img-top"
+                  alt="The Legend of Zelda Tears of the Kingdom - Nintendo Switch"
+                  style="
+                    min-height: 460px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                />
+                <div class="card-body">
+                  <p class="card-title h5">
+                    The Legend of Zelda Tears of the Kingdom - Nintendo Switch
+                  </p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$69</span> <sup>00</sup>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="carousel-item">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/games/new-super-mario-bros-u-deluxe---Nintendo-Switch.jpg"
+                  class="card-img-top rounded-4"
+                  alt="New Super Mario Bros U Deluxe - Nintendo Switch"
+                  style="
+                    min-height: 460px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                />
+                <div class="card-body">
+                  <p class="card-title h5">
+                    New Super Mario Bros U Deluxe - Nintendo Switch
+                  </p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$89</span> <sup>00</sup>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artículo 3 -->
+            <div class="carousel-item">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/games/pokemon-violet--Nintendo-Switch.png"
+                  class="card-img-top rounded-4"
+                  alt="Pokemon Violet - Nintendo Switch"
+                  style="
+                    min-height: 460px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                />
+                <div class="card-body">
+                  <p class="card-title h5">Pokemon Violet - Nintendo Switch</p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$79</span> <sup>00</sup>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carrusel-juegos"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-black p-md-4"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carrusel-juegos"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-black p-md-4"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Carrusel 2 - Películas -->
+        <div
+          id="carrusel-movies"
+          class="carousel slide col-sm-6 col-md-4 col-lg"
+        >
+          <div class="carousel-inner">
+            <h2 class="text-center">Lo más deseados en Películas y TV</h2>
+
+            <!-- Artículo 1 -->
+            <div class="carousel-item active">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/movies/black-panther-wakanda-forever.jpg"
+                  class="card-img-top"
+                  alt="Black Panther Wakanda Forever"
+                  style="
+                    min-height: 460px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                />
+                <div class="card-body">
+                  <p class="card-title h5">Black Panther Wakanda Forever</p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$29</span> <sup>39</sup>
+                    <span class="ms-2 text-secondary">
+                      PVPR:
+                      <span class="text-decoration-line-through">
+                        USD$39.99
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="carousel-item">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/movies/antman-and-the-wasp-quantumania.jpg"
+                  class="card-img-top"
+                  alt="Antman and the Wasp Quantumania"
+                  style="
+                    min-height: 460px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                />
+                <div class="card-body">
+                  <p class="card-title h5">Antman and the Wasp Quantumania</p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$35</span> <sup>39</sup>
+                    <span class="ms-2 text-secondary">
+                      PVPR:
+                      <span class="text-decoration-line-through">
+                        USD$44.99
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artículo 3 -->
+            <div class="carousel-item">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/movies/doctor-strange-in-the-multiverse-of-madness.jpg"
+                  class="card-img-top"
+                  alt="Doctor Stange in the Multiverse of Madness"
+                  style="
+                    min-height: 460px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                />
+                <div class="card-body">
+                  <p class="card-title h5">
+                    Doctor Stange in the Multiverse of Madness
+                  </p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$29</span> <sup>99</sup>
+                    <span class="ms-2 text-secondary">
+                      PVPR:
+                      <span class="text-decoration-line-through">
+                        USD$39.99
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carrusel-movies"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-black p-md-4"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carrusel-movies"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-black p-md-4"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Sala de Cine en Casa -->
+        <div class="col-sm-6 col-md-4 col-lg">
+          <h2 class="text-center">Entretenimiento Fácil</h2>
+          <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+            <img
+              src="assets/images/rooms/living room/living-room.jpg"
+              class="card-img-top rounded-0"
+              alt="Living room with a bookshelf with a TV in the middle"
+              style="
+                min-height: 460px;
+                object-fit: cover;
+                object-position: center;
+              "
+            />
+            <div class="card-body px-0">
+              <a href="#" class="btn btn-link p-0">
+                Ver más productos selectos
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrusel 3 - Memorias -->
+        <div
+          id="carrusel-memorias"
+          class="carousel slide col-sm-6 col-md-4 col-lg"
+        >
+          <div class="carousel-inner">
+            <h2 class="text-center">Comprados con frecuencia</h2>
+
+            <!-- Artículo 1 -->
+            <div class="carousel-item active">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/memories/microSD/micro-SD-EVO-128GB.webp"
+                  class="card-img-top"
+                  alt="Memorias microSD EVO 128GB"
+                />
+                <div class="card-body">
+                  <p class="card-title h5">Memorias microSD EVO 128GB</p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$13</span> <sup>49</sup>
+                    <span class="ms-2 text-secondary">
+                      PVPR:
+                      <span class="text-decoration-line-through">
+                        USD$19.99
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="carousel-item">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/memories/microSD/microSD-PRO+-128GB.webp"
+                  class="card-img-top"
+                  alt="Memoria microSD PRO+ 128GB"
+                />
+                <div class="card-body">
+                  <p class="card-title h5">Memoria microSD PRO+ 128GB</p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$19</span> <sup>99</sup>
+                    <span class="ms-2 text-secondary">
+                      PVPR:
+                      <span class="text-decoration-line-through">
+                        USD$24.99
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artículo 3 -->
+            <div class="carousel-item">
+              <div class="card rounded-0 text-bg-light pt-3 pb-0 px-2">
+                <img
+                  src="assets/images/memories/microSD/microSDHC-EVO-16GB.webp"
+                  class="card-img-top"
+                  alt="Memoria microSDHC EVO 16GB"
+                />
+                <div class="card-body">
+                  <p class="card-title h5">Memoria microSDHC EVO 16GB</p>
+                  <p class="card-text">
+                    <sup>USD</sup> <span class="h5">$6</span> <sup>99</sup>
+                    <span class="ms-2 text-secondary">
+                      PVPR:
+                      <span class="text-decoration-line-through">
+                        USD$10.00
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carrusel-memorias"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-black p-md-4"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carrusel-memorias"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-black p-md-4"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Ofertas Amazon -->
+      <h2 class="text-center mt-5">Ofertas en Dispositivos Amazon</h2>
+
+      <div class="row gap-3 gap-sm-0 p-3 p-sm-0">
+        <!-- Dispositivo Amazon 1 -->
+        <div
+          class="card rounded-0 pt-3 pb-0 px-2 text-bg-light border-0 col-sm-6 col-md-3 col-lg"
+        >
+          <img
+            src="assets/images/amazon productos/ring-video-doorbell-3-plus-5.webp"
+            class="card-img-top rounded-0"
+            alt="Ring Video Doorbell 3 Plus 5"
+            style="min-height: 200px; object-fit: cover"
+          />
+          <div class="card-body px-0">
+            <p class="card-text">
+              <span class="d-inline-block bg-danger text-white p-1 mb-1">
+                -30%
+              </span>
+              <span class="text-danger">Oferta</span>
+            </p>
+            <p class="card-text">
+              <sup>USD</sup> <span class="h5">$139</span> <sup>99</sup>
+            </p>
+            <p class="card-text">
+              <span class="text-secondary">
+                Precio recomendado:
+                <span class="text-decoration-line-through"> USD$199.99 </span>
+              </span>
+            </p>
+            <p class="card-text">Ring Video Doorbell 3 Plus 5</p>
+          </div>
+        </div>
+
+        <!-- Dispositivo Amazon 2 -->
+        <div
+          class="card rounded-0 pt-3 pb-0 px-2 text-bg-light border-0 col-sm-6 col-md-3 col-lg"
+        >
+          <img
+            src="assets/images/amazon productos/amazon-kindle-paperwhite-2018.webp"
+            class="card-img-top rounded-0"
+            alt="Amazon Kindle Paperwhite 2018"
+            style="min-height: 200px; object-fit: cover"
+          />
+          <div class="card-body px-0">
+            <p class="card-text">
+              <span class="bg-danger text-white p-1">Hasta un -50%</span>
+              <span class="text-danger">Oferta</span>
+            </p>
+            <p class="card-text">Ahorra en Amazon y más</p>
+            <p class="card-text">Amazon Kindle Paperwhite 2018</p>
+          </div>
+        </div>
+
+        <!-- Dispositivo Amazon 3 -->
+        <div
+          class="card rounded-0 pt-3 pb-0 px-2 text-bg-light border-0 col-sm-6 col-md-3 col-lg"
+        >
+          <img
+            src="assets/images/amazon productos/smart-tv-led-32-inches.webp"
+            class="card-img-top rounded-0"
+            alt="Ring Video Doorbell 3 Plus 5"
+            style="min-height: 200px; object-fit: cover"
+          />
+          <div class="card-body px-0">
+            <p class="card-text">
+              <span class="d-inline-block bg-danger text-white p-1 mb-1">
+                -39%
+              </span>
+              <span class="text-danger">Oferta</span>
+            </p>
+            <p class="card-text">
+              <sup>USD</sup> <span class="h5">$109</span> <sup>99</sup>
+            </p>
+            <p class="card-text">
+              <span class="text-secondary">
+                Precio recomendado:
+                <span class="text-decoration-line-through"> USD$179.99 </span>
+              </span>
+            </p>
+            <p class="card-text">Insignia 32-inch HD Smart Fire TV</p>
+          </div>
+        </div>
+
+        <!-- Dispositivo Amazon 4 -->
+        <div
+          class="card rounded-0 pt-3 pb-0 px-2 text-bg-light border-0 col-sm-6 col-md-3 col-lg"
+        >
+          <img
+            src="assets/images/amazon productos/apple-earpods.webp"
+            class="card-img-top rounded-0"
+            alt="Amazon Kindle Paperwhite 2018"
+            style="min-height: 200px; object-fit: cover"
+          />
+          <div class="card-body px-0">
+            <p class="card-text">
+              <span class="bg-danger text-white p-1">Hasta un -20%</span>
+              <span class="text-danger">Oferta</span>
+            </p>
+            <p class="card-text">Ahorra en eero y más</p>
+            <p class="card-text">Amazon Kindle Paperwhite 2018</p>
+          </div>
+        </div>
+
+        <!-- Dispositivo Amazon 5 -->
+        <div
+          class="card rounded-0 pt-3 pb-0 px-2 text-bg-light border-0 col-sm-6 col-md-3 col-lg"
+        >
+          <img
+            src="assets/images/amazon productos/ring-video-doorbell.jpg"
+            class="card-img-top rounded-0"
+            alt="Amazon Kindle Paperwhite 2018"
+            style="min-height: 200px; object-fit: cover"
+          />
+          <div class="card-body px-0">
+            <p class="card-text">
+              <span class="bg-danger text-white p-1">Hasta un -33%</span>
+              <span class="text-danger">Oferta</span>
+            </p>
+            <p class="card-text">Ahorra en Ring y más</p>
+            <p class="card-text">Amazon Kindle Paperwhite 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
